@@ -119,7 +119,7 @@ func generateDownloadLink(md5, bookID, bookTitle, bookFiletype string) string {
 
 	md5 = strings.ToLower(md5)
 	bookTitle = strings.Replace(bookTitle, " ", "_", -1)
-	return fmt.Sprintf("https://download.library.lol/main/%s/%s/%s.%s", newBookID, md5, bookTitle, bookFiletype)
+	return fmt.Sprintf("https://download.books.ms/main/%s/%s/%s.%s", newBookID, md5, bookTitle, bookFiletype)
 }
 
 func getOpenLibraryId(idsJoined string) []map[string]string {

@@ -21,7 +21,7 @@ func TestGenerateDownloadLink(t *testing.T) {
 	bookID := "1234"
 	bookTitle := "Das Kapital"
 	bookFiletype := "pdf"
-	expectedLink := "https://download.library.lol/main/1000/abcd1234/Das_Kapital.pdf"
+	expectedLink := "https://download.books.ms/main/1000/abcd1234/Das_Kapital.pdf"
 
 	result := generateDownloadLink(md5, bookID, bookTitle, bookFiletype)
 	if result != expectedLink {
